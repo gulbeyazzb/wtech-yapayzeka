@@ -81,3 +81,21 @@ DT accuracy: 1.0
 KNN accuracy: 0.9425511197663097
 
 çok hızlı çalıştı ve en başarılı sonucu Decision Tree(karar ağaçları) algoritması verdi.
+
+**\*BAŞARISI**
+
+optimizer='adam'
+model.add(Dense(8, input_dim=input_layer, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
+
+parametreleri ile 0.95 başarı elde edildi.
+
+model.add(Dense(128, input_dim=input_layer, activation='relu'))
+model.add(Dense(64, activation='relu'))
+model.add(Dense(16, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
+optimizer=rmsprop
+
+parametreleri ile 0.96 başarı elde edildi.
+
+modelimiz **başarılı** bir şekilde eğitildi.
